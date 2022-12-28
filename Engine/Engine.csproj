@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AStarLite" Version="1.1.0" />
+    <PackageReference Include="MonoGame.Framework.WpfInterop" Version="1.9.2" />
+    <PackageReference Include="ShadowCaster" Version="1.0.2" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

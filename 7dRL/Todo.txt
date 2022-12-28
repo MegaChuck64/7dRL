@@ -1,0 +1,22 @@
+﻿DONE - //fix event log list scroll to bottom
+DONE - //change death event log
+DONE - //don't tie time to movement. can't be both turn based and real time, make a choice
+DONE - //change clock into 00:00 format
+DONE - //fix weird sight range inconsistencies, sight range for player is set in constructor body, in maingame new() { }, in up using getSightRange
+DONE - //change tree 
+DONE - //timescale
+DONE - //pausing
+DONE - //Store in pause screen
+
+//currency
+//inventory
+//finish store, with real items, real currency being transferred and add item to inventory
+//research invisible obstacle bug. collision and site react to invisible obstacles sometimes. Might be a z index issue
+//damage over time, attack rate
+//create affect base class
+//make enemies hit by fire revealed
+
+
+
+
+

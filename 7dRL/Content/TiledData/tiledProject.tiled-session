@@ -1,0 +1,61 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Assets/tileAtlas.tsx",
+    "expandedProjectPaths": [
+        "Assets"
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "Assets/map.tmx": {
+            "scale": 1.28546875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 33.83979579433572,
+                "y": 114.35517199465178
+            }
+        },
+        "Assets/tileAtlas.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 4
+        },
+        "tileAtlas.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 5.5
+        },
+        "tiledProject.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 762.25,
+                "y": 799.25
+            }
+        }
+    },
+    "last.imagePath": "Y:/source/repos/7dRL/7dRL/Content",
+    "map.height": 40,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 40,
+    "openFiles": [
+        "Assets/tileAtlas.tsx",
+        "Assets/map.tmx"
+    ],
+    "project": "tiledProject.tiled-project",
+    "recentFiles": [
+        "Assets/map.tmx",
+        "Assets/tileAtlas.tsx",
+        "tileAtlas.tsx",
+        "tiledProject.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.transparentColor": "#7e7878",
+    "tileset.useTransparentColor": true
+}
