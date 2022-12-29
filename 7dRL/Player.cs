@@ -1,4 +1,5 @@
 ﻿using _7dRL.RoomCreation;
+using _7dRL.Spells;
 using Engine.Core;
 using Engine.Utilities;
 using Microsoft.Xna.Framework;
@@ -18,7 +19,7 @@ public class Player : Character
     private float glowTimer = 0f;
     private int glowModifer = 0;
     private bool glowingUp = false;
-    FireBallSpell spell;
+    FireWallSpell spell;
 
     public Player(Map map, SpriteAtlas atlas, WpfGame game, GameObject? owner = null) : base(map, atlas, game, owner)
     {
@@ -37,7 +38,7 @@ public class Player : Character
             Y = empty.Y;
         }
 
-        spell = new FireBallSpell(Map, Atlas, this)
+        spell = new FireWallSpell(Map, Atlas, this)
         {
             AttackDuration = 1f / AttackRate
         };

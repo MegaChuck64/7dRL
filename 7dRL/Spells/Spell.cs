@@ -6,11 +6,11 @@ using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _7dRL;
+namespace _7dRL.Spells;
 
 public abstract class Spell : IComponent
 {
-    public GameObject Owner {get; set;}
+    public GameObject Owner { get; set; }
     public bool IsActive { get; set; }
 
     public List<(int x, int y)> Path { get; set; }
@@ -36,16 +36,16 @@ public abstract class Spell : IComponent
         Atlas = atlas;
         Owner = owner;
         IsActive = true;
-        Path = new List<(int,int)>();
+        Path = new List<(int, int)>();
     }
 
     public abstract void Target(int x, int y, int? max);
-        
+
     public virtual void Attack(int dmg)
     {
         damage = dmg;
         IsAttacking = true;
-        
+
         durationTimer = 0f;
         var atkPth = new (int x, int y)[Path.Count];
         Path.CopyTo(atkPth);
@@ -55,7 +55,7 @@ public abstract class Spell : IComponent
     private List<Character> AttackableCharacters(bool includePlayer = false, bool includeEnemies = true)
     {
         var characters = new List<Character>();
-     
+
         if (IsAttacking && AttackedPath != null)
         {
             foreach (var (x, y) in AttackedPath)
@@ -82,7 +82,7 @@ public abstract class Spell : IComponent
                         }
                     }
                 }
-                
+
             }
         }
 
@@ -96,7 +96,7 @@ public abstract class Spell : IComponent
 
     public void Update(float dt)
     {
-        if(IsAttacking)
+        if (IsAttacking)
         {
             durationTimer += dt;
 
@@ -117,7 +117,7 @@ public abstract class Spell : IComponent
             {
                 durationTimer = 0f;
                 IsAttacking = false;
-                
+
                 AttackedCharacters.Clear();
                 AttackedPath.Clear();
             }

@@ -10,11 +10,55 @@ DONE - //Store in pause screen
 
 //currency
 //inventory
+//real spell slots. right now the firewall is hardcoded
 //finish store, with real items, real currency being transferred and add item to inventory
 //research invisible obstacle bug. collision and site react to invisible obstacles sometimes. Might be a z index issue
 //damage over time, attack rate
 //create affect base class
 //make enemies hit by fire revealed
+
+
+
+//Event/Time
+This needs to be sorted out
+We should use an event queue
+and the daycycle sends tick events to it
+then should be able to adjust timescale while in play mode
+FTL style
+60fps
+timescale = ticksPerSecond = 1f = tick every second
+//does this mean we do all of the events in the queue
+// or do we do 1 event per tick??
+
+
+// SPELLS
+right now spell class is really an AOA, break out spell, 
+so base spell has aim path (all spells should have an aim path?)
+this spell will then spawn objects that will apply effects to targets
+one of those effects could be an AOA that is in a shape
+
+//spells how they should be
+
+heal spell
+	holding space, shows a sprite that represents the heal range
+	pressing mouse left button, casts the spell, healing anyone in the range
+
+
+fire ball spell
+	holding space, shows a sprite showing the direction the fireball will travel
+	press mouse left button, casts the spell, creates a fireball object that travels until it hits something or duration
+	//if it hits a character, it applies an affect
+
+	
+fire wall spell
+	holding space, shows a path of fireball sprites that are low opactiy
+	pressing space spawns a bunch of stationary firebals that have a duration
+	if collides with cahracter applies a fire effect
+
+
+aiming
+cast
+
 
 
 

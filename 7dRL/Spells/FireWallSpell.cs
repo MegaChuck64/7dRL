@@ -5,15 +5,15 @@ using Microsoft.Xna.Framework;
 using System.Linq;
 
 
-namespace _7dRL;
+namespace _7dRL.Spells;
 
-public class FireBallSpell : Spell
+public class FireWallSpell : Spell
 {
     readonly PathFinder pathfinder;
-    public FireBallSpell(Map map, SpriteAtlas atlas, GameObject owner) : base(map, atlas, owner)
+    public FireWallSpell(Map map, SpriteAtlas atlas, GameObject owner) : base(map, atlas, owner)
     {
         Tint = Color.Red * .5f;
-        AtlasPosition = (28,11);
+        AtlasPosition = (28, 11);
         pathfinder = new PathFinder(map);
     }
 
@@ -21,6 +21,6 @@ public class FireBallSpell : Spell
     {
         pathfinder.CreatePath(Owner.X, Owner.Y, x, y, true, false);
         Path = max.HasValue ? pathfinder.Path.Take(max.Value).ToList() : pathfinder.Path;
-        
+
     }
 }
